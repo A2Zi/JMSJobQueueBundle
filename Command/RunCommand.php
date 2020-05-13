@@ -370,7 +370,7 @@ class RunCommand extends Command
 
         $args = $this->getBasicCommandLineArgs();
         $args[] = $job->getCommand();
-        $args[] = '--jms-job-id='.$job->getId();
+        //$args[] = '--jms-job-id='.$job->getId();
 
         foreach ($job->getArgs() as $arg) {
             $args[] = $arg;
